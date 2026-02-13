@@ -63,7 +63,7 @@ def scaning():
                     flag = True
         if flag:
             main.alarm(rep)            
-        time.sleep(config["time_betwin_scans"])
+        time.sleep(config["time_between_scans"])
 
 
 
