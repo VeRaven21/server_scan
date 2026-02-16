@@ -3,7 +3,7 @@ import time
 import json
 from datetime import datetime
 
-import main
+
 
 funcs = {}
 
@@ -62,10 +62,9 @@ def scaning():
                 if c_rep[k]>=c_lim[k]:
                     flag = True
         if flag:
+            import main
             main.alarm(rep)            
-        time.sleep(config["time_betwin_scans"])
-
-
+        time.sleep(config["scan"]["time_betwin_scans"])
 
 
 
